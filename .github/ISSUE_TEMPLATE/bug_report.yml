@@ -1,0 +1,33 @@
+name: Bug report
+description: Something in Lumapad doesn't work as it should
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time! Lumapad's **Help > Send feedback** can fill most of this in for you."
+  - type: input
+    id: version
+    attributes:
+      label: Lumapad version
+      description: Settings > Updates shows it (e.g. 0.9.2 or 0.9.2-beta.1)
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Your setup
+      description: Controllers (USB or Bluetooth), the game, Windows version.
+  - type: textarea
+    id: log
+    attributes:
+      label: Log (optional)
+      description: "Help > For a helper > Log > Load, then copy the lines around the problem."
+      render: text

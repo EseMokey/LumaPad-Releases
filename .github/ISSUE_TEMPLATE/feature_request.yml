@@ -1,0 +1,20 @@
+name: Idea
+description: Something that would make Lumapad better
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Lumapad version
+  - type: textarea
+    id: details
+    attributes:
+      label: Your idea
+      description: What would you like Lumapad to do, and in which game or situation?
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Your setup (optional)

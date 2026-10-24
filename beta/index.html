@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lumapad testers</title>
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<script src="../site.js" defer></script>
+</head>
+<body data-page="tester">
+<header class="top wrap">
+  <a class="brand" href="../"><img src="../icon.svg" alt="">Lumapad <span class="tag beta">Testers</span></a>
+  <nav class="links"><a href="../">Download</a><a class="on" href="./">Testers</a></nav>
+</header>
+
+<main class="wrap">
+  <div class="hero" style="padding-bottom:20px">
+    <img class="logo" src="../icon.svg" alt="">
+    <h1>Testing Lumapad</h1>
+    <p class="lead">Betas get the newest changes first. Thanks for trying them and telling us what breaks.</p>
+  </div>
+
+  <section class="gate" id="gate">
+    <p>Type the tester code you were given.</p>
+    <input id="code" type="password" autocomplete="off" placeholder="Tester code" aria-label="Tester code">
+    <button class="btn primary" id="go">Open the tester page</button>
+    <p class="err" id="err"></p>
+  </section>
+
+  <div id="betas" hidden>
+    <div class="cta" id="betaDl"></div>
+    <section>
+      <h2>How testing works</h2>
+      <ol class="steps">
+        <li><div><b>Put the tester code into Lumapad too.</b><span>Settings &gt; Updates &gt; Tester. Then every beta and older version shows up there and you pick which one to install. Betas never install by themselves.</span></div></li>
+        <li><div><b>Tell us what you find.</b><span>Help &gt; Send feedback &gt; Beta feedback, with the log ticked. Bugs, ideas and "this feels great" all help.</span></div></li>
+        <li><div><b>When a full release comes out</b><span>you move to it by yourself, so you're never stuck on an old beta.</span></div></li>
+      </ol>
+    </section>
+    <section>
+      <h2>Every version</h2>
+      <div id="betaList"><p class="loading">Loading...</p></div>
+      <p class="note">Something broke? <b>Settings &gt; Updates</b> can go back to any earlier version, or report it <a data-issues href="#">on GitHub</a>.</p>
+    </section>
+  </div>
+</main>
+
+<footer><div class="wrap"><span>Lumapad testers</span><span>Please don't share this page or the code.</span></div></footer>
+</body>
+</html>

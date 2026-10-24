@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumapad: one app for your game controllers</title>
+<meta name="description" content="Lumapad makes PlayStation, Xbox and Switch controllers work in every PC game: rumble, adaptive triggers, profiles per game, low delay.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer></script>
+</head>
+<body data-page="public">
+<header class="top wrap">
+  <a class="brand" href="./"><img src="icon.svg" alt="">Lumapad</a>
+  <nav class="links"><a class="on" href="./">Download</a><a href="#releases-section">What's new</a><a href="#help">Help</a><a href="beta/">Testers</a></nav>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <img class="logo" src="icon.svg" alt="">
+    <h1>Lumapad</h1>
+    <p class="lead">Your PlayStation, Xbox and Switch controllers in every PC game: real rumble, adaptive triggers, a profile for each game and almost no delay.</p>
+    <div class="cta">
+      <a class="btn primary" id="download" href="#">Looking for the newest version...</a>
+      <span class="meta" id="dlMeta">For Windows 10 and 11 (64-bit)</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="grid">
+      <div class="card"><h3>One player per controller</h3><p>Games see exactly one controller per person, with no double input, up to 12 players.</p></div>
+      <div class="card"><h3>A profile for every game</h3><p>Remaps, deadzones, gyro aim, triggers and lights switch by themselves when a game starts.</p></div>
+      <div class="card"><h3>Quick Menu in any game</h3><p>Hold PS and press L3: change profile, rumble, triggers and lights without leaving the game.</p></div>
+      <div class="card"><h3>Keeps itself up to date</h3><p>New versions install by themselves when you're not playing. Never during a game.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Install it</h2>
+    <ol class="steps">
+      <li><div><b>Download and run Lumapad-Setup.</b><span>Windows may say it protected your PC (the setup isn't signed yet): choose <b>More info</b>, then <b>Run anyway</b>.</span></div></li>
+      <li><div><b>Keep both drivers ticked.</b><span>HidHide stops games seeing two controllers; USBIP makes the virtual controller. Restart if the setup asks.</span></div></li>
+      <li><div><b>Plug in your controller and play.</b><span>Lumapad starts with Windows and sits in the tray. That's it.</span></div></li>
+    </ol>
+  </section>
+
+  <section id="releases-section">
+    <h2>What's new</h2>
+    <div id="releases"><p class="loading">Loading...</p></div>
+  </section>
+
+  <section id="help">
+    <h2>Help and feedback</h2>
+    <div class="grid">
+      <div class="card"><h3>Something not working?</h3><p>In Lumapad: <b>Help &gt; Send feedback</b> sends your note and the log straight to us. Or <a data-issues href="#">report it on GitHub</a>.</p></div>
+      <div class="card"><h3>Have an idea?</h3><p>We'd love to hear it: <b>Help &gt; Send feedback &gt; Idea</b>, or <a data-issues href="#">suggest it on GitHub</a>.</p></div>
+      <div class="card"><h3>Testing new versions</h3><p>Friends who test betas get a code. <a href="beta/">The tester page</a> has the newest beta.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="year"></span> Lumapad</span><span>Not affiliated with Sony, Microsoft or Nintendo.</span></div></footer>
+</body>
+</html>
